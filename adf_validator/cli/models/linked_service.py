@@ -27,6 +27,6 @@ class LinkedServicePropertiesOneOf(OneOfSchema):
 
 
 class LinkedService(DataFactoryResource):
-    properties = fields.Nested(LinkedServicePropertiesOneOf)
+    properties = fields.Nested(LinkedServicePropertiesOneOf, required=True)
 
 
